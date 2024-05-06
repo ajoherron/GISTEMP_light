@@ -2,4 +2,4 @@
 
 python run.py
 
-2. Evaluate gridding algorithm in gridding.ipynb
+2. Evaluate gridding algorithms in gridding_v1_pandas.ipynb & gridding_v1_numpy.ipynb
