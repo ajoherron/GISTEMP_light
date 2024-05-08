@@ -10,7 +10,7 @@ NEARBY_STATION_RADIUS = 1200.0
 GHCN_TEMP_URL = "https://data.giss.nasa.gov/pub/gistemp/ghcnm.tavg.qcf.dat"
 GHCN_META_URL = "https://data.giss.nasa.gov/pub/gistemp/v4.inv"
 
-import step0, step1, step2
+from steps import step0, step1, step2
 import os
 import shutil
 

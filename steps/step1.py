@@ -62,7 +62,7 @@ def filter_by_rules(df) -> pd.DataFrame:
 
     # Set path for drop rules file
     drop_rules_path = os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "..", "GISTEMP_light", "drop_rules.csv")
+        os.path.join(os.path.dirname(__file__), "..", "drop_rules.csv")
     )
 
     # Read in drop rules csv, create copy of input dataframe
