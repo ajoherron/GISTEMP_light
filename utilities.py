@@ -10,34 +10,6 @@ import numpy as np
 import pandas as pd
 
 
-def normalize_dict_values(d: dict) -> dict:
-    """
-    Normalize the values of a dictionary to make their sum equal to 1.
-
-    This function takes a dictionary as input and calculates the sum of its values. It then normalizes each value by dividing
-    it by the total sum, ensuring that the sum of normalized values is 1. This is useful for converting a set of values into
-    proportions or probabilities.
-
-    Parameters:
-        d (dict): A dictionary where values will be normalized.
-
-    Returns:
-        dict: A new dictionary with the same keys as the input, but with values normalized to ensure a sum of 1.
-    """
-
-    # Calculate the sum of all values in the dictionary
-    total = sum(d.values())
-
-    # Check if the total is not zero to avoid division by zero
-    if total != 0:
-        # Normalize each value by dividing by the total
-        normalized_dict = {key: value / total for key, value in d.items()}
-        return normalized_dict
-    else:
-        # Handle the case where the total is zero (all values are zero)
-        return d  # Return the original dictionary
-
-
 def haversine_distance(
     lat1: float,
     lon1: float,
