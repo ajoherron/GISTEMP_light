@@ -18,7 +18,6 @@ from tqdm import tqdm
 # Local imports (tools functions)
 from utilities import (
     calculate_distances,
-    normalize_dict_values,
 )
 
 
@@ -107,10 +106,8 @@ def find_nearby_stations(grid_df, station_df, distances, NEARBY_STATION_RADIUS):
                 for j in valid_indices[0]
             }
 
-            # Normalize weights to sum to 1
-            nearby_dict = normalize_dict_values(nearby_dict)
+            # Add dict to list
             nearby_dict_list.append(nearby_dict)
-
             progress_bar.update(1)
 
         # Add the list of station IDs and weights as a new column
